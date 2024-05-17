@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  /* color: white; */
+  align-items: center;
+  font-family: monospace;
+
+}
