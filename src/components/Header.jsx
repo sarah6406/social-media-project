@@ -14,8 +14,10 @@ export default function Header() {
         width={50}
         height={50}
       /> */}
+       <UserButton />
+    
       <h1>TheHappyHippyHub</h1>
-      <UserButton />
+     
     </Link>
   );
 }

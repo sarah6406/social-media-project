@@ -1,3 +1,4 @@
+
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
@@ -29,10 +30,10 @@ export default async function Form() {
   revalidatePath("/profile");
   return (
     <div>
-      <form className="form" action={handleUpdateProfile}>
       <p>Current User Name: {currentUsername.username}</p>
       <p>Bio: {bio.bio}</p>
-      <h2>Update Profile Name</h2>
+      <form className="form" action={handleUpdateProfile}>
+      <h2>Update Profile:</h2>
         <label htmlFor="username">Username:</label>
         <input type="text" name="username" placeholder="username..." />
         <label htmlFor="bio">Biography:</label>
@@ -41,6 +42,7 @@ export default async function Form() {
           Submit
         </button>
       </form>
+   
     </div>
   );
 }

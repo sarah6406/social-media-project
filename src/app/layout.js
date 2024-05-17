@@ -13,6 +13,7 @@ import Menu from "@/components/Menu";
 // import Image from "next/image";
 import Header from "@/components/Header";
 import Form from "@/components/Form";
+import HeaderRadix from "@/components/HeaderRadix";
 
 export const metadata = {
   title: "TheHappyHippyHub",
@@ -46,15 +47,13 @@ export default async function RootLayout({ children }) {
             <SignedOut>{children}</SignedOut>
             <SignedIn>
               <Header />
+              <HeaderRadix />
               {/* {hasUsername && children} */}
               {!hasUsername && <Form />}
 
               <div className="sections">
                 <Menu className="left-side-bar" />
-                <div className="main-container">
-          
-                  {children}
-                </div>
+                <div className="main-container">{children}</div>
               </div>
             </SignedIn>
           </main>

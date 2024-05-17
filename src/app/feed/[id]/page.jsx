@@ -4,6 +4,7 @@ import { auth } from "@clerk/nextjs/server";
 
 export default async function IndividualPostPage({ params }) {
   const { userId } = auth();
+
   //selecting all comments where post id is equal to /feed/[id]
   const allComments = await db.query(
     `SELECT * FROM comments WHERE post_id = ${params.id}`
@@ -14,7 +15,7 @@ export default async function IndividualPostPage({ params }) {
     const content = formData.get("comment");
     console.log(content);
     await db.query(
-      `INSERT INTO comments (post_id, content) VALUES (${params.id},' ${content}')`
+      `INSERT INTO comments (post_id, content) VALUES (${params.id}, ${content}')` //how do i get profile_id
     );
     // console.log(content.content);
 
