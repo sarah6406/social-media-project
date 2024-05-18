@@ -8,7 +8,7 @@ import {
 import { auth } from "@clerk/nextjs/server";
 import "./globals.css";
 import { db } from "@/lib/db";
-import Menu from "@/components/Menu";
+// import Menu from "@/components/Menu";
 // import Link from "next/link";
 // import Image from "next/image";
 import Header from "@/components/Header";

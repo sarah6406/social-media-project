@@ -15,7 +15,7 @@ export default async function IndividualPostPage({ params }) {
     const content = formData.get("comment");
     console.log(content);
     await db.query(
-      `INSERT INTO comments (post_id, content) VALUES (${params.id}, ${content}')` //how do i get profile_id
+      `INSERT INTO comments (post_id, content) VALUES (${params.id}, '${content}')` //how do i get profile_id
     );
     // console.log(content.content);
 
