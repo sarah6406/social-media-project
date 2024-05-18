@@ -43,7 +43,7 @@ export default async function IndividualPostPage({ params }) {
         <p>Post: {comment.content}</p>
         <form className="form" action={handleComments}>
           <label htmlFor="comment">Comment:</label>
-          <input type="text" name="comment" placeholder="comment..." />
+          <textarea className="textarea" type="text" name="comment" placeholder="comment..." />
           <button type="submit" className="comment-button">
             Submit
           </button>
