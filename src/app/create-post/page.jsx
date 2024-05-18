@@ -25,7 +25,7 @@ export default async function CreatePost() {
       <form className="form" action={handleCreatePost}>
       {/* <h1>New Post</h1> */}
       <h2>Create new post:</h2>
-        <textarea name="content" placeholder="New post"></textarea>
+        <textarea className="textarea" name="content" placeholder="New post"></textarea>
         <button className="comment-button">Submit</button>
       </form>
     </div>

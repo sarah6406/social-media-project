@@ -37,7 +37,7 @@ export default async function Form() {
         <label htmlFor="username">Username:</label>
         <input type="text" name="username" placeholder="username..." />
         <label htmlFor="bio">Biography:</label>
-        <textarea type="text" name="bio" placeholder="bio..." />
+        <textarea className="textarea" type="text" name="bio" placeholder="bio..." />
         <button type="submit" className="comment-button">
           Post!
         </button>

@@ -33,7 +33,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 40%;
+  width: 80%;
 }
 
 .left-side-bar {
@@ -66,4 +66,7 @@ a.nav:hover {
   text-decoration: underline;
 }
 
+.textarea {
+  height: 100px;
+}
 
