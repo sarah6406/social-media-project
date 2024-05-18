@@ -1,12 +1,12 @@
 
-/* .nav {
+.nav {
     text-align: center;
     text-decoration: none;
-    /* background-color: black; */
-    /* color: white; */
+    background-color: rgb(201, 47, 47);
+    color: white;
     /* padding: 2px 6px 2px 6px; */
     /* border: 1px solid black; */
     /* max-width: 6rem; */
-    /* border-radius: 10px; */
+    border-radius: 10px;
     /* position: sticky; */
-/* } */ 
+} 

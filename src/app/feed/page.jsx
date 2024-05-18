@@ -14,7 +14,7 @@ export default async function Posts() {
     <div className="feed">
       <SignedIn>
         <div className="posts">
-          <h2>Feed</h2>
+          <h2>Feed:</h2>
           {posts.rows.map((post) => {
             return (
               <Link
