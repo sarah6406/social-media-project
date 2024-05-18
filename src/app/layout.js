@@ -52,7 +52,7 @@ export default async function RootLayout({ children }) {
               {!hasUsername && <Form />}
 
               <div className="sections">
-                <Menu className="left-side-bar" />
+                {/* <Menu className="left-side-bar" /> */}
                 <div className="main-container">{children}</div>
               </div>
             </SignedIn>

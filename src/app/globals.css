@@ -13,17 +13,18 @@ html {
   background-color: black;
   color: white;
   font-family: sans-serif;
+  margin: 10%;
 }
 
 .posts {
   display: flex;
   flex-direction: column;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 .post-block {
   text-decoration: none;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   color: white;
@@ -50,14 +51,14 @@ html {
 }
 .main-container {
   width: 80%;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 0.5rem;
   border-radius: 10px;
   color: white;
 }
 
 a.nav {
-  width: 6rem;
+  width: 5rem;
   text-decoration: none;
   color: white;
   padding: 0.5rem;
